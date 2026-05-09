@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violence District Guide | Unofficial</title>
+    <!-- Import Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg-black text-zinc-300 font-sans">
+
+    <header class="py-12 text-center border-b border-red-900 bg-black relative overflow-hidden">
+        <div class="glitch-overlay"></div>
+        <h1 class="text-6xl font-black text-red-700 uppercase italic drop-shadow-2xl">Violence District</h1>
+        <p class="mt-3 text-zinc-500 tracking-[0.3em] text-xs uppercase">The Ultimate Survival Database</p>
+    </header>
+
+    <nav class="flex overflow-x-auto whitespace-nowrap bg-zinc-950 sticky top-0 z-50 border-b border-zinc-800 scrollbar-hide">
+        <button onclick="showTab('survivor')" class="tab-btn flex-1 px-6 py-4 font-bold text-sm transition-all border-b-2 border-transparent" id="defaultOpen">SURVIVOR</button>
+        <button onclick="showTab('killer')" class="tab-btn flex-1 px-6 py-4 font-bold text-sm transition-all border-b-2 border-transparent">KILLER</button>
+        <button onclick="showTab('mechanics')" class="tab-btn flex-1 px-6 py-4 font-bold text-sm transition-all border-b-2 border-transparent">MECHANICS</button>
+    </nav>
+
+    <main class="max-w-6xl mx-auto p-8">
+               <!-- Tab Survivor -->
+<div id="survivor" class="tab-content active">
+    <h2 class="text-3xl font-bold mb-2 text-blue-400">Survivor Equipment Guide</h2>
+    <p class="mb-8 text-gray-400 font-medium italic">Klik Kanan pada Mouse untuk menggunakan item.</p>
+
+   <!-- Container Grid Survivor -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- Item: Senter -->
+    <div class="bg-zinc-900 rounded-lg border-l-4 border-yellow-500 hover-area overflow-hidden flex flex-col md:flex-row items-center">
+        <!-- Area Gambar -->
+        <div class="w-full md:w-32 h-32 bg-black flex-shrink-0 border-b md:border-b-0 md:border-r border-zinc-800">
+            <img src="asset/IconFlashlight.webp" alt="Senter" class="w-full h-full object-contain p-3 item-img">
+        </div>
+        <!-- Area Teks -->
+        <div class="p-4 flex-1">
+            <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-yellow-500">Senter</h3>
+                <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400">UTILITY</span>
+            </div>
+            <p class="text-xs text-zinc-400 leading-relaxed">Membutakan Killer selama <span class="text-white">2 detik</span>. Gunakan saat Killer mendekat atau sedang memanggul kawan.</p>
+        </div>
+    </div>
+
+    <!-- Item: Twist of Fate (Pistol) -->
+    <div class="bg-zinc-900 rounded-lg border-l-4 border-purple-600 hover-area overflow-hidden flex flex-col md:flex-row items-center">
+        <!-- Area Gambar -->
+        <div class="w-full md:w-32 h-32 bg-black flex-shrink-0 border-b md:border-b-0 md:border-r border-zinc-800">
+            <img src="asset/IconTwistOfFate.webp" alt="Twist of Fate" class="w-full h-full object-contain p-3 item-img">
+        </div>
+        <!-- Area Teks -->
+        <div class="p-4 flex-1">
+            <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-purple-500 italic">Twist of Fate</h3>
+                <span class="text-[10px] bg-red-900/30 px-2 py-1 rounded text-red-400">GAMBLE</span>
+            </div>
+            <p class="text-xs text-zinc-400 leading-relaxed">Menyetrum Killer. <span class="text-red-500">60/40 Chance:</span> Jika gagal, lo bakal kena setrum sendiri!</p>
+        </div>
+    </div>
+
+  <!-- Item: Dagger -->
+<div class="bg-zinc-900 rounded-lg border-l-4 border-zinc-400 hover-area overflow-hidden flex flex-col md:flex-row items-center">
+    <div class="w-full md:w-32 h-32 bg-black flex-shrink-0 border-b md:border-b-0 md:border-r border-zinc-800">
+        <img src="asset/IconParryingDagger.webp" alt="Dagger" class="w-full h-full object-contain p-3 item-img">
+    </div>
+    <div class="p-4 flex-1">
+        <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-zinc-300">Dagger</h3>
+            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400">DEFENSE</span>
+        </div>
+        <p class="text-xs text-zinc-400 leading-relaxed">Senjata pertahanan jarak dekat. Gunakan <span class="text-white">Klik Kanan</span> untuk melakukan parry serangan Killer.</p>
+    </div>
+</div>
+
+<!-- Item: Adrenalin -->
+<div class="bg-zinc-900 rounded-lg border-l-4 border-green-500 hover-area overflow-hidden flex flex-col md:flex-row items-center">
+    <div class="w-full md:w-32 h-32 bg-black flex-shrink-0 border-b md:border-b-0 md:border-r border-zinc-800">
+        <img src="asset/IconAdrenalineShot.webp" alt="Adrenalin" class="w-full h-full object-contain p-3 item-img">
+    </div>
+    <div class="p-4 flex-1">
+        <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-green-500">Suntikan Adrenalin</h3>
+            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400">BUFF</span>
+        </div>
+        <p class="text-xs text-zinc-400 leading-relaxed">Meningkatkan speed <span class="text-white">10% selama 5 detik</span>. Cocok untuk kabur saat stamina habis.</p>
+    </div>
+</div>
+
+<!-- Item: Bandage -->
+<div class="bg-zinc-900 rounded-lg border-l-4 border-red-500 hover-area overflow-hidden flex flex-col md:flex-row items-center">
+    <div class="w-full md:w-32 h-32 bg-black flex-shrink-0 border-b md:border-b-0 md:border-r border-zinc-800">
+        <img src="asset/IconBandage.webp" alt="Bandage" class="w-full h-full object-contain p-3 item-img">
+    </div>
+    <div class="p-4 flex-1">
+        <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-red-500">Bandage</h3>
+            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400">HEALING</span>
+        </div>
+        <p class="text-xs text-zinc-400 leading-relaxed">Sembuhkan diri sendiri tanpa bantuan. <span class="text-red-600 font-bold italic">Hanya 1x penggunaan per game.</span></p>
+    </div>
+</div>
+
+<!-- Item: Lilin -->
+<div class="bg-zinc-900 rounded-lg border-l-4 border-orange-500 hover-area overflow-hidden flex flex-col md:flex-row items-center">
+    <div class="w-full md:w-32 h-32 bg-black flex-shrink-0 border-b md:border-b-0 md:border-r border-zinc-800">
+        <img src="asset/IconWaxBoundCandle.webp" alt="Lilin" class="w-full h-full object-contain p-3 item-img">
+    </div>
+    <div class="p-4 flex-1">
+        <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-orange-400">Lilin</h3>
+            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400">VISION</span>
+        </div>
+        <p class="text-xs text-zinc-400 leading-relaxed">Melihat <span class="text-white">Aura Killer (50m)</span> menembus tembok. <span class="text-orange-500 font-bold">Limit: 6x Pakai.</span></p>
+    </div>
+</div>
+
+<!-- Item: Pendeteksi Killer -->
+<div class="bg-zinc-900 rounded-lg border-l-4 border-blue-600 hover-area overflow-hidden flex flex-col md:flex-row items-center">
+    <div class="w-full md:w-32 h-32 bg-black flex-shrink-0 border-b md:border-b-0 md:border-r border-zinc-800">
+        <img src="asset/IconMotionTracker.webp" alt="Pendeteksi Killer" class="w-full h-full object-contain p-3 item-img">
+    </div>
+    <div class="p-4 flex-1">
+        <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-blue-500">Pendeteksi Killer</h3>
+            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400">RADAR</span>
+        </div>
+        <p class="text-xs text-zinc-400 leading-relaxed">Berbunyi otomatis jika Killer berada dalam <span class="text-white">radius 50m</span>.</p>
+    </div>
+</div>
+</div>
+</div>
+      <!-- Tab Killer -->
+<div id="killer" class="tab-content">
+    <h2 class="text-3xl font-bold mb-6 text-red-600 uppercase tracking-tighter">The Executioners</h2>
+    
+    <div class="space-y-8">
+        
+        <!-- The Veil -->
+        <div class="bg-zinc-900 overflow-hidden rounded-xl border border-red-900 shadow-[0_0_20px_rgba(153,27,27,0.2)]">
+            <div class="bg-red-900 px-6 py-2 flex justify-between items-center">
+                <h3 class="text-2xl font-black italic">THE VEIL</h3>
+                <span class="text-xs font-bold bg-black px-3 py-1 rounded-full text-red-400 border border-red-500">SNIPER / RANGED</span>
+            </div>
+            <div class="p-6 grid md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="text-red-500 font-bold uppercase text-sm mb-2">Skill Aktif: Menombak</h4>
+                    <p class="text-gray-300 text-sm">Menyerang survivor dari jarak jauh dengan tombak mematikan. <br> 
+                    <span class="text-white font-bold italic text-xs uppercase bg-red-800 px-1">2x Penggunaan (Cooldown 15 Detik)</span></p>
+                </div>
+                <div class="border-l border-zinc-800 pl-6">
+                    <h4 class="text-red-500 font-bold uppercase text-sm mb-2">Pasif: Wall-Pierce</h4>
+                    <p class="text-gray-300 text-sm italic">"Tak ada tempat bersembunyi." Tombak yang dilemparkan dapat menembus tembok/objek padat.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Slasher -->
+        <div class="bg-zinc-900 overflow-hidden rounded-xl border border-red-900 shadow-[0_0_20px_rgba(153,27,27,0.2)]">
+            <div class="bg-red-900 px-6 py-2 flex justify-between items-center">
+                <h3 class="text-2xl font-black italic">THE SLASHER</h3>
+                <span class="text-xs font-bold bg-black px-3 py-1 rounded-full text-red-400 border border-red-500">BREACHER / STEALTH</span>
+            </div>
+            <div class="p-6 grid md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="text-red-500 font-bold uppercase text-sm mb-2">Pengejaran (Passive-Active)</h4>
+                    <p class="text-gray-300 text-sm">Saat mengejar, tidak perlu tekan [Space] untuk hancurkan palet. Cukup jalan maju dan palet akan hancur otomatis.</p>
+                </div>
+                <div class="border-l border-zinc-800 pl-6">
+                    <h4 class="text-red-500 font-bold uppercase text-sm mb-2">Menghilang</h4>
+                    <p class="text-gray-300 text-sm">Mendapat <span class="text-green-400 font-bold">80% Speed Boost</span> namun tidak bisa melakukan serangan (Hit) selama mode ini aktif.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Killer -->
+        <div class="bg-zinc-900 overflow-hidden rounded-xl border border-red-900 shadow-[0_0_20px_rgba(153,27,27,0.2)]">
+            <div class="bg-red-900 px-6 py-2 flex justify-between items-center text-white">
+                <h3 class="text-2xl font-black italic">THE KILLER</h3>
+                <span class="text-xs font-bold bg-black px-3 py-1 rounded-full text-red-400 border border-red-500">CHAIN-ATTACKER</span>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center gap-2 mb-4">
+                    <h4 class="text-red-500 font-bold uppercase text-sm">Skill Utama: FRENZY</h4>
+                </div>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div class="bg-black p-4 rounded border border-zinc-800">
+                        <p class="text-green-400 font-bold mb-1">BUFF</p>
+                        <p class="text-gray-400 text-xs">+30% Speed & Fast Vault (Jendela/Palet).</p>
+                    </div>
+                    <div class="bg-black p-4 rounded border border-zinc-800">
+                        <p class="text-yellow-500 font-bold mb-1">CONDITION</p>
+                        <p class="text-gray-400 text-xs">Hit 4 survivor berbeda berturut-turut untuk <b>Insta-Knockdown.</b></p>
+                    </div>
+                    <div class="bg-black p-4 rounded border border-zinc-800">
+                        <p class="text-red-500 font-bold mb-1">RISK</p>
+                        <p class="text-gray-400 text-xs">Hit survivor yang sama 2x akan membatalkan mode Frenzy secara instan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Hidden -->
+        <div class="bg-zinc-900 overflow-hidden rounded-xl border border-red-900 shadow-[0_0_20px_rgba(153,27,27,0.2)]">
+            <div class="bg-red-900 px-6 py-2 flex justify-between items-center text-white">
+                <h3 class="text-2xl font-black italic uppercase">The Hidden</h3>
+                <span class="text-xs font-bold bg-black px-3 py-1 rounded-full text-red-400 border border-red-500">MOBILITY / TRACKER</span>
+            </div>
+            <div class="p-6 grid md:grid-cols-2 gap-4">
+                <div class="bg-black p-4 rounded border border-zinc-800">
+                    <h4 class="text-red-500 font-bold text-sm uppercase mb-1">Skill 1: Mark</h4>
+                    <p class="text-gray-400 text-xs text-justify">Melakukan dash cepat. Jika mengenai survivor, akan memberikan damage dan memperlihatkan <span class="text-white font-bold">Aura selama 3 detik</span>.</p>
+                </div>
+                <div class="bg-black p-4 rounded border border-zinc-800">
+                    <h4 class="text-red-500 font-bold text-sm uppercase mb-1">Skill 2: Leap</h4>
+                    <p class="text-gray-400 text-xs text-justify">Dash tanpa damage, namun memiliki kemampuan untuk <span class="text-white font-bold">melompati tembok dan jendela</span> jika timing penggunaan pas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Stalker -->
+        <div class="bg-zinc-900 overflow-hidden rounded-xl border border-red-900 shadow-[0_0_20px_rgba(153,27,27,0.2)]">
+            <div class="bg-red-900 px-6 py-2 flex justify-between items-center text-white">
+                <h3 class="text-2xl font-black italic uppercase">The Stalker</h3>
+                <span class="text-xs font-bold bg-black px-3 py-1 rounded-full text-red-400 border border-red-500">STEALTH / BURST</span>
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6 mb-4">
+                    <div>
+                        <h4 class="text-red-500 font-bold text-sm uppercase mb-2">Passive: No Redlight</h4>
+                        <p class="text-gray-400 text-xs italic">Selama skill belum penuh dan belum mencekik, killer ini tidak memiliki Redlight (Lampu merah penanda arah pandang), membuatnya sangat sulit dideteksi.</p>
+                    </div>
+                    <div class="bg-black p-4 rounded-lg border border-red-900">
+                        <p class="text-[10px] text-red-500 font-bold mb-1 uppercase tracking-widest">Evil Grasp Charge Bar</p>
+                        <div class="w-full bg-zinc-800 h-4 rounded-full overflow-hidden border border-zinc-700">
+                            <div class="bg-gradient-to-r from-red-900 via-red-600 to-white h-full w-[75%] animate-pulse"></div>
+                        </div>
+                        <p class="text-[9px] text-gray-500 mt-1">Gunakan Klik Kanan (Stalk) sambil melihat Survivor untuk mengisi bar.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="border-l-2 border-red-600 pl-4">
+                        <p class="text-white font-bold text-sm uppercase">Evil Grasp</p>
+                        <p class="text-gray-400 text-xs">Saat bar penuh, killer bisa melakukan animasi <span class="text-red-500">mencekik</span> survivor secara instan.</p>
+                    </div>
+                    <div class="border-l-2 border-green-600 pl-4">
+                        <p class="text-green-500 font-bold text-sm uppercase">Hunting Mode</p>
+                        <p class="text-gray-400 text-xs">Aktif setelah Evil Grasp kena. Mendapat <span class="text-white">+20% Move Speed</span> dan kemampuan melewati jendela dengan cepat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Abyssal Walker -->
+        <div class="bg-zinc-900 overflow-hidden rounded-xl border border-red-900 shadow-[0_0_20px_rgba(153,27,27,0.2)]">
+            <div class="bg-red-900 px-6 py-2 flex justify-between items-center text-white">
+                <h3 class="text-2xl font-black italic uppercase text-shadow">The Abyssal Walker</h3>
+                <span class="text-xs font-bold bg-black px-3 py-1 rounded-full text-red-400 border border-red-500">CONTROL / DASH</span>
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="bg-zinc-800/50 p-3 rounded">
+                            <h4 class="text-red-500 font-bold text-xs uppercase underline">Skill: Black Smoke</h4>
+                            <p class="text-gray-300 text-[11px]">Melemparkan asap hitam. Jika kena, Survivor akan terkena efek <span class="text-red-500 font-bold italic underline">Slow 50%</span>.</p>
+                        </div>
+                        <div class="bg-zinc-800/50 p-3 rounded border border-red-900/30">
+                            <h4 class="text-red-500 font-bold text-xs uppercase underline">Skill: Dark Severance</h4>
+                            <p class="text-gray-300 text-[11px]">Dash cepat ke arah yang ditentukan sambil menebas.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center bg-black/40 p-4 border-2 border-dashed border-zinc-700 rounded-lg">
+                        <p class="text-yellow-500 font-black text-center text-sm uppercase italic">⚠️ Counter Strategy</p>
+                        <p class="text-gray-400 text-[10px] text-center mt-2">Gunakan tombol <span class="text-white font-bold bg-zinc-700 px-1 rounded">Crouch / Menunduk</span> untuk menghindari tebasan dari Dark Severance secara total!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+       <!-- Tab Mechanics -->
+<div id="mechanics" class="tab-content">
+    <h2 class="text-3xl font-bold mb-6 text-yellow-500 uppercase tracking-tighter italic">Game Core & Strategy</h2>
+    
+    <!-- Objective Section -->
+    <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-blue-900/20 p-6 rounded-xl border border-blue-500/50 shadow-[inset_0_0_20px_rgba(59,130,246,0.2)]">
+            <h3 class="text-2xl font-black text-blue-400 mb-3">SURVIVOR GOAL</h3>
+            <p class="text-gray-300 leading-relaxed">
+                Fokus utama lo adalah <span class="text-white font-bold underline">memperbaiki Generator</span> yang tersebar di map. Sambil benerin gene, lo harus tetap waspada dan <span class="text-white font-bold">lari dari Killer</span> yang terus memburu. Jangan biarkan mereka menangkapmu sebelum gerbang keluar terbuka!
+            </p>
+        </div>
+        
+        <div class="bg-red-900/20 p-6 rounded-xl border border-red-500/50 shadow-[inset_0_0_20px_rgba(239,44,44,0.2)]">
+            <h3 class="text-2xl font-black text-red-500 mb-3">KILLER GOAL</h3>
+            <p class="text-gray-300 leading-relaxed">
+                Tugas lo simpel tapi brutal: <span class="text-white font-bold underline">Cari semua Survivor</span> dan habisi mereka. Pastikan tidak ada satu pun yang lolos dari distrik ini. Gunakan insting dan skill unikmu untuk menutup jalur pelarian mereka selamanya.
+            </p>
+        </div>
+    </div>
+
+    <!-- Fun Facts Section -->
+    <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-4 opacity-10">
+            <svg width="100" height="100" viewBox="0 0 24 24" fill="currentColor text-white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+        </div>
+        
+        <h3 class="text-xl font-bold mb-6 text-yellow-500 flex items-center gap-2">
+            <span class="bg-yellow-500 text-black px-2 py-0.5 rounded text-sm">PRO TIPS</span> 
+            IMPORTANT FUN FACTS
+        </h3>
+
+        <div class="space-y-4">
+            <div class="flex gap-4 items-start bg-black/40 p-4 rounded-lg hover:bg-black/60 transition">
+                <span class="text-red-500 font-black text-xl">01.</span>
+                <p class="text-gray-300 text-sm">
+                    <span class="text-white font-bold">Death Limit:</span> Sebagai Survivor, nyawa lo terbatas. Jika lo digantung (hooked) <span class="text-red-500 underline">lebih dari 2 kali</span>, lo otomatis mati dan langsung dipulangkan ke lobby.
+                </p>
+            </div>
+
+            <div class="flex gap-4 items-start bg-black/40 p-4 rounded-lg hover:bg-black/60 transition">
+                <span class="text-red-500 font-black text-xl">02.</span>
+                <p class="text-gray-300 text-sm">
+                    <span class="text-white font-bold">Gen-Rush Strategy:</span> Jangan asal benerin gene! Pilihlah generator yang berdekatan untuk diselesaikan duluan. Tujuannya agar saat <span class="italic">late game</span>, jarak antar gene yang tersisa berjauhan sehingga <span class="text-yellow-500">rotasi Killer jadi susah</span>.
+                </p>
+            </div>
+
+            <div class="flex gap-4 items-start bg-black/40 p-4 rounded-lg hover:bg-black/60 transition">
+                <span class="text-red-500 font-black text-xl">03.</span>
+                <p class="text-gray-300 text-sm">
+                    <span class="text-white font-bold">Pallet Discipline:</span> Cermatlah dalam menggunakan palet. Jangan "waste" palet di awal game untuk area yang tidak terlalu berbahaya. Palet adalah aset paling berharga Survivor untuk *looping*.
+                </p>
+            </div>
+
+            <div class="flex gap-4 items-start bg-black/40 p-4 rounded-lg hover:bg-black/60 transition">
+                <span class="text-red-500 font-black text-xl">04.</span>
+                <p class="text-gray-300 text-sm">
+                    <span class="text-white font-bold">Killer's Instinct:</span> Buat para Killer, mata bukan segalanya. Gunakan headphone kalian karena lo bisa <span class="text-green-500 font-bold">mendengar suara langkah kaki (step)</span> Survivor dengan sangat jelas meski mereka tidak terlihat.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <footer class="mt-20 py-10 bg-zinc-950 text-center border-t border-red-900/30">
+        <p class="text-zinc-600 text-xs tracking-widest uppercase">&copy; 2026 Violence District Guide - Rey Project</p>
+    </footer>
+
+    <!-- Custom JS Link -->
+    <script src="script.js"></script>
+</body>
+</html>
